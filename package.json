@@ -1,10 +1,14 @@
 {
-  "name": "demo-editorial",
+  "name": "sanity-opinionated-studio",
+  "private": true,
   "version": "1.0.0",
-  "description": "Sanity/Next.js Website",
-  "author": "Simeon Griggs",
+  "description": "",
+  "main": "package.json",
+  "author": "Simeon Griggs <simeon@sanity.io>",
   "license": "UNLICENSED",
   "scripts": {
+    "start": "sanity start",
+    "build": "sanity build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "postinstall": "husky install"
@@ -14,15 +18,27 @@
       "pre-commit": "npm run lint:fix"
     }
   },
+  "keywords": [
+    "sanity"
+  ],
   "dependencies": {
-    "husky": "^5.0.9",
-    "prettier": "^2.3.0"
+    "@sanity/base": "^2.21.1",
+    "@sanity/core": "^2.21.0",
+    "@sanity/default-layout": "^2.21.1",
+    "@sanity/default-login": "^2.21.0",
+    "@sanity/desk-tool": "^2.21.1",
+    "@sanity/vision": "^2.21.1",
+    "prop-types": "^15.7",
+    "react": "^17.0",
+    "react-dom": "^17.0",
+    "styled-components": "^5.2.0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.1.0",
-    "@typescript-eslint/parser": "^4.1.0",
-    "autoprefixer": "^10.2.4",
-    "babel-eslint": "^10.1.0",
+    "@babel/plugin-syntax-jsx": "^7.14.5",
+    "@babel/preset-react": "^7.14.5",
+    "@typescript-eslint/eslint-plugin": "^4.31.2",
+    "babel-plugin-lodash": "^3.3.4",
+    "babel-plugin-wildcard": "^7.0.0",
     "eslint": "^7.8.1",
     "eslint-config-prettier": "^6.7.0",
     "eslint-config-sanity": "^5.0.0",
@@ -33,7 +49,7 @@
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.1.2",
-    "eslint-config-next": "^11.0.0",
-    "typescript": "^4.3.4"
+    "husky": "^5.0.9",
+    "prettier": "^2.3.0"
   }
 }

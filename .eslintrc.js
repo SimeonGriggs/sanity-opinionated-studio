@@ -14,8 +14,6 @@ module.exports = {
     'sanity/import',
     'plugin:react-hooks/recommended',
     'prettier',
-    'prettier/react',
-    'next',
   ],
   rules: {
     'no-use-before-define': 'off',
@@ -40,7 +38,7 @@ module.exports = {
     ],
     'react/forbid-prop-types': [0],
   },
-  plugins: ['import', 'prettier', 'react'],
+  plugins: ['prettier', 'react'],
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
