@@ -1,7 +1,5 @@
 import S from '@sanity/desk-tool/structure-builder'
 
-import listWithIcon from './listWithIcon'
-
 export const getDefaultDocumentNode = ({schemaType}) => {
   if (schemaType === `article`) {
     return S.document().views([
